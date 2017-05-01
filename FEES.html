@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <title>STUDENT FEES FORM</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <link rel="stylesheet" type="text/css" href="css/default.css"/>
+    </head>
+    <body>    
+        <form action="fees.php" class="register" method="POST">
+            <h1>FEES</h1>
+            <fieldset class="row1">
+                <legend>STUDENT DETAILS
+                </legend>
+                <p>
+                    <label>STUDENT ID *
+                    </label>
+                    <input type="text" name="id"/>
+                    <label>LEVEL *
+                    </label>
+                    
+			<select class='form-control' id='id_LEVEL' name="level">
+                <option>BEGINNER</option>
+                <option>INTERMEDIATE</option>
+                <option>ADVANCED</option>
+              </select>
+                </p>
+                
+            </fieldset>
+           
+            <fieldset class="row1">
+                <legend>FEES
+                </legend>
+                
+                <p>
+                    <label>DATE *</label>
+                    <input type="text" name="doj" placeholder="YYYY-MM-DD"><br>
+					<p><center><strong>NOTE:</strong> Please enter the date in the above mentioned format</center></p>
+					<label>TYPE *</label>
+                    
+                    <label class="gender">REGULAR FEES</label>
+					<input type="radio" name="type" value="RegularFees"/>
+                    <label class="gender">TEST FEES</label>
+					<input type="radio"  name="type" value="TestFees"/>
+					
+					<p>
+                    <label>AMOUNT
+                    </label>
+                    <input type="text"  name="fees"class="long"/>
+                </p>
+                </p>
+                    
+                    
+               
+            <div><button class="button" name="submit" type="submit">UPDATE &raquo;</button></div>
+        </form>
+    </body>
+</html>
+
+
+
+
+

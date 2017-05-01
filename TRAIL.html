@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <title>STUDENT ATTENDANCE FORM</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <link rel="stylesheet" type="text/css" href="css/default.css"/>
+    </head>
+    <body>    
+        <form action="attendance.php" method="POST"class="register">
+            <h1>ATTENDANCE</h1>
+            <fieldset class="row1">
+                <legend>STUDENT DETAILS
+                </legend>
+                <p>
+                    <label>STUDENT ID *
+                    </label>
+                    <input type="text" name="id"/>
+                    <label>LEVEL *
+                    </label>
+                    
+			<select class='form-control' id='id_LEVEL' name="level">
+                <option>BEGINNER</option>
+                <option>INTERMEDIATE</option>
+                <option>ADVANCED</option>
+              </select>
+                </p>
+                
+            </fieldset>
+           
+            <fieldset class="row1">
+                <legend>ATTENDANCE UPDATION
+                </legend>
+                
+                <p>
+                    <label>DATE *</label>
+                    <input type="text" name="doj" placeholder="YYYY-MM-DD"><br>
+					<p><center><strong>NOTE:</strong> Please enter the date in the above mentioned format</center></p>
+					<label>STATUS *</label>
+                    
+                    <label class="gender">PRESENT</label>
+					<input type="radio" name="status" value="present"/>
+                    <label class="gender">ABSENT</label>
+					<input type="radio" name="status" value="absent"/>
+                </p>
+                    
+                    
+               
+            <div><button class="button" type="submit" name="submit">UPDATE &raquo;</button></div>
+        </form>
+    </body>
+</html>
+
+
+
+
+

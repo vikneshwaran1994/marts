@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <title>STUDENT ENROLLMENT FORM</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <link rel="stylesheet" type="text/css" href="css/default.css"/>
+    </head>
+    <body>    
+        <form action="enroll.php" class="register" method="POST" >
+            <h1><strong>BEGINNER REGISTRATION<strong></h1>
+            <fieldset class="row1">
+                <legend>Account Details
+                </legend>
+                <p>
+                    <label>Email/username *
+                    </label>
+                    <input type="text" name="email"/>
+                    <label>Repeat email *
+                    </label>
+                    <input type="text"/>
+                </p>
+                <p>
+                    <label>Password*
+                    </label>
+                    <input type="password" name="pass"/>
+                    <label>Repeat Password*
+                    </label>
+                    <input type="password"/>
+                    <label class="obinfo">* obligatory fields
+                    </label>
+                </p>
+            </fieldset>
+            <fieldset class="row1">
+                <legend>Personal Details
+                </legend>
+                <p> <label>Name</label>
+                    <input type="text" name="fname" placeholder="first name"/>
+                    <input type="text" name="lname" placeholder="last name"/>
+                </p>
+                <p>
+                    <label>Phone *
+                    </label>
+                    <input type="text"  name="phone" placeholder="(xxx)-xxx xxxx"/>
+                </p>
+                <p>
+                    <label>Parent/Guardian *
+                    </label>
+                    <input type="text" name="pname" />
+                    <label>Parent/Guardian Email
+                    </label>
+                    <input type="text" name="pemail"/>
+                </p>
+				<p>
+                    <label>Emergency Contact *
+                    </label>
+                    <input type="text" name="pmobile"/>
+                </p>
+                <p>
+                    <label> Address
+                    </label>
+                    <input type="text" name="address"/>
+                </p>
+            </fieldset>
+            <fieldset class="row1">
+                <legend>Further Information
+                </legend>
+                <p>
+                    <label>Gender *</label>
+                    <label class="gender">Male</label>
+					<input type="radio" name="gender" value="male"/>
+                    <label class="gender">Female</label>
+					<input type="radio" name="gender" value="female"/>
+                </p>
+				<p>
+				   <p><label>BEGINNER</label></p><br>
+				    <label>Type of Membership *</label>
+                    <label class="membership">QUATERLY</label>
+                    <input type="radio" name="mship" value="Quaterly"/>
+                    <label class="membership">HALF-YEARLY</label>
+					<input type="radio" name="mship" value="Half-yearly"/>
+                    <label class="membership">ANNUAL</label>
+					<input type="radio" name="mship" value="Annual"/>
+                </p>
+                <p>
+                    <label>Birthdate *</label>
+                    <input type="text" name="dob" placeholder="YYYY-MM-DD">
+					<label>Date of Enrollment *</label>
+					<input type ="text" name="doj" placeholder="YYYY-MM-DD"><br>
+					<p><center><strong>NOTE:</strong> Please enter the date in the above mentioned format</center></p>
+                    
+				<div align="center">
+				<button class="button" type="submit" name="submit">Register &raquo;</button></div>
+            </fieldset>
+        </form>
+    </body>
+</html>
+
+
+
+
+
